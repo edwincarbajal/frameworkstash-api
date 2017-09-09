@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+frameworks = ['React', 'Ruby on Rails', 'React Native']
+
+frameworks.each do |framework|
+  Framework.create!(title: framework)
+end
+
+10.times do
+  Tutorial.create!(
+    title: Faker::Lorem.word,
+    description: Faker::Lorem.word,
+    author: Faker::Lorem.word,
+    url: Faker::Lorem.word,
+    skill_level: Faker::Lorem.word,
+    framework: Framework.all.sample
+  )
+end
