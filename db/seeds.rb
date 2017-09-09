@@ -9,7 +9,10 @@
 frameworks = ['React', 'Ruby on Rails', 'React Native']
 
 frameworks.each do |framework|
-  Framework.create!(title: framework)
+  Framework.create!(
+    title: framework,
+    description: Faker::Lorem.word,
+    )
 end
 
 10.times do
