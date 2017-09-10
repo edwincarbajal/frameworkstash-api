@@ -28,7 +28,7 @@ Framework.create!(
     title: Faker::Lorem.word,
     description: Faker::Lorem.word,
     author: Faker::Lorem.word,
-    url: Faker::Lorem.word,
+    url: "http://www.google.com",
     skill_level: Faker::Lorem.word,
     framework: Framework.all.sample
   )
