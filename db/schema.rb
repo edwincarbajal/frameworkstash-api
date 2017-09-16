@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170913211123) do
+ActiveRecord::Schema.define(version: 20170916221928) do
 
   create_table "frameworks", force: :cascade do |t|
     t.string "title", null: false
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20170913211123) do
     t.integer "framework_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "likes_count", default: 0
     t.index ["framework_id"], name: "index_tutorials_on_framework_id"
   end
 
