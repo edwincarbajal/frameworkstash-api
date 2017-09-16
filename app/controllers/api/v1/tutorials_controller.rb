@@ -16,6 +16,10 @@ class Api::V1::TutorialsController < ApplicationController
     end
   end
 
+  def trending
+    tutorials = Tutorial.trending
+    render json: tutorials, status: :ok
+  end
 
   private
     def get_framework
