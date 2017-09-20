@@ -29,6 +29,7 @@ group :development, :test do
   gem 'faker'
 end
 
+  gem 'dotenv-rails', groups: [:development]
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
