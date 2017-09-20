@@ -22,8 +22,7 @@ class Api::V1::TutorialsController < ApplicationController
   end
 
   def send_request
-    binding.pry
-    UserMailer.welcome_email.deliver_now
+    UserMailer.welcome_email(params).deliver_now
   end
 
   private
@@ -34,4 +33,5 @@ class Api::V1::TutorialsController < ApplicationController
     def like_params
       params.permit(:like).require(:value)
     end
+
 end
