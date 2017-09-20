@@ -21,6 +21,11 @@ class Api::V1::TutorialsController < ApplicationController
     render json: tutorials, status: :ok
   end
 
+  def send_request
+    binding.pry
+    UserMailer.welcome_email.deliver_now
+  end
+
   private
     def get_framework
       @framework = Framework.find(params[:id])

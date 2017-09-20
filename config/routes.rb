@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get 'tutorials/:id/like', to: 'tutorials#like'
       get '/tutorials/trending', to: 'tutorials#trending'
       post 'subscribe', to: 'subscriptions#new'
+      post 'send', to: 'tutorials#send_request'
     end
   end
 end
