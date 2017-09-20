@@ -2,7 +2,7 @@ class Api::V1::TutorialsController < ApplicationController
   before_action :get_framework, only: [:index]
 
   def index
-    tutorials = @framework.tutorials
+    tutorials = @framework.tutorials.desc
     render json: tutorials, status: :ok
   end
 

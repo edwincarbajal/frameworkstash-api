@@ -4,6 +4,9 @@ class Tutorial < ApplicationRecord
   belongs_to :framework, dependent: :destroy
   has_many :likes
 
+
+  scope :desc, -> { order(created_at: :desc) }
+
   scope :trending, -> {
                         joins(:likes).
                         group('tutorials.id').
