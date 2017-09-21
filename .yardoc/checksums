@@ -1,7 +1,7 @@
 app/models/like.rb 273295415f2ab1954c62c6897e428fddb89e2dcc
 app/models/tutorial.rb e8202a091a467c3c607038a9130dbed91ccbf106
 app/models/framework.rb 88e381f8cb6a0e6612d79fd92ee32d90e0af8e72
-app/mailers/user_mailer.rb fc2e79fae33796233c86f2df67f75e9cf16697c2
+app/mailers/user_mailer.rb aa994f221f922278c5e947a2803777d789bc922c
 app/models/subscription.rb 13479e3841b300ddcd02119a9af82e39f1edb4b5
 app/jobs/application_job.rb 9a24c3e30cfb517943d8774df4695ba794bfd69d
 app/models/application_record.rb b40193a5447806d689d114a0f55f392ae7c199e4
@@ -10,6 +10,6 @@ app/serializers/like_serializer.rb 3866a0c7afae734cb8c12f766b97ef6a613e46d4
 app/serializers/tutorial_serializer.rb 2e3f24bbed85dfef3818e4f2a9d0d5e0321e3a74
 app/serializers/framework_serializer.rb 157369ceec214dd58285a440599bbd32496ac2fe
 app/controllers/application_controller.rb aea221ae3d65699c61b0135d8f11dd6eb49131b0
-app/controllers/api/v1/tutorials_controller.rb 33e46e6a7efe76fa1fb38001e4c04278b6ecf328
+app/controllers/api/v1/tutorials_controller.rb b258e2dae8b0779edab146f8154a26dabf5e3236
 app/controllers/api/v1/frameworks_controller.rb 3185026191a41641a948e7c8ac7653b9df939ea7
 app/controllers/api/v1/subscriptions_controller.rb c05efcec353988c052db0350af2e10c62a42eb94
