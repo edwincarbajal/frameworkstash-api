@@ -1,6 +1,6 @@
 namespace :subscriptions do
   desc "Send Subscriptions"
-  task :winner => :environment do
+  task :send => :environment do
     SubscriptionMailer.subscription_email.deliver_now
   end
 end
