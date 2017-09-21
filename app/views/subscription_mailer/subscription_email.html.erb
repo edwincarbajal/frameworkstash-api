@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <% if @subscriptions %>
+        <% @subscriptions.each do |subscription| %>
+          <ul>
+            <li><%= subscription.url %> </li>
+          </ul>
+        <% end %>
+      <% else %>
+          <p>None added in the last week. Submit your own!</p>
+      <% end %>
+    </body>
+  </head>
+</html>
