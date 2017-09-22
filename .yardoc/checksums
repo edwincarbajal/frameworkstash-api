@@ -1,7 +1,7 @@
 app/models/like.rb 273295415f2ab1954c62c6897e428fddb89e2dcc
 app/models/tutorial.rb e8202a091a467c3c607038a9130dbed91ccbf106
 app/models/framework.rb 88e381f8cb6a0e6612d79fd92ee32d90e0af8e72
-app/mailers/user_mailer.rb aa994f221f922278c5e947a2803777d789bc922c
+app/mailers/user_mailer.rb 66e405930e945cb2adecd27403094b7c2319e349
 app/models/subscription.rb 13479e3841b300ddcd02119a9af82e39f1edb4b5
 app/jobs/application_job.rb 9a24c3e30cfb517943d8774df4695ba794bfd69d
 app/models/application_record.rb b40193a5447806d689d114a0f55f392ae7c199e4
