@@ -8,6 +8,15 @@ class Api::V1::SubscriptionsController < ApplicationController
     end
   end
 
+  def unsubscribe
+    subscription = Subscription.find_by(email: subscription_params[:email])
+    if subscription.destroy
+      render :status => 200
+    else
+      render :status => 409
+    end
+  end
+
   private
 
   def subscription_params
