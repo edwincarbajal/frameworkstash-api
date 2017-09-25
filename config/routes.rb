@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       get '/tutorials/trending', to: 'tutorials#trending'
       post 'subscribe', to: 'subscriptions#new'
       post 'send', to: 'tutorials#send_request'
+      post '/unsubscribe', to: 'subscriptions#unsubscribe'
     end
   end
 end
